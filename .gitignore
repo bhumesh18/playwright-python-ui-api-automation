@@ -1,0 +1,36 @@
+
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Generated test results
+test-results/
+playwright-report/
+output/
+
+# Reports and logs
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# IDE settings
+.vscode/
+.idea/
