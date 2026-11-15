@@ -57,10 +57,6 @@ def checkout_page(cart_page):
 
 #Fixture :
 
-@pytest.fixture
-def api_client(api_context):
-    return APIClient(api_context)
-
 # API context
 @pytest.fixture(scope="session")
 def api_context(playwright: Playwright):

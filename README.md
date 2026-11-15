@@ -92,7 +92,7 @@ playwright-python-ui-api-automation/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/playwright-python-ui-api-automation.git
+git clone https://github.com/bhumesh18/playwright-python-ui-api-automation.git
 cd playwright-python-ui-api-automation
 ```
 

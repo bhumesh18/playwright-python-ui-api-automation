@@ -28,8 +28,8 @@ def test_empty_first_name(checkout_page):
 def test_empty_postal_code(checkout_page):
 
     checkout_page.fill_customer_info(
-        "Bhumesh",
-        "Lalwani",
+        "Test",
+        "User",
         ""
     )
 
