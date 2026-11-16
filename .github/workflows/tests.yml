@@ -13,7 +13,7 @@ permissions:
 jobs:
   automated-tests:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
 
@@ -47,7 +47,7 @@ jobs:
       # Upload test reports and debugging artifacts
       - name: Upload test artifacts
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: automation-test-results
           path: |
@@ -55,3 +55,4 @@ jobs:
             test-results/
             logs/automation.log
           if-no-files-found: warn
+          retention-days: 7
